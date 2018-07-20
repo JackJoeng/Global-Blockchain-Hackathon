@@ -1,0 +1,20 @@
+<div class="containter">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <table width="100%" class="table table-striped table-bordered table-hover">
+              <tr>
+                <th>Expense</th>
+                <th>Amount</th>
+              </tr>
+              <tr ng-repeat="ledger in $ctrl.ledger">
+                <td class="odd gradeX">{{ledger.expense}}</td>
+                <td class="even gradeC">{{ledger.amount}}</td>
+              </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="masthead text-center">
+  <div class="overlay"></div>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-10 col-lg-8 col-xl-7 mx-auto'>
+        <div class="form-row">
+          <div class="col-12 col-md-9 mb-2 mb-md-0">
+            <h2 for='organization'> Organization: </h2>
+              <select class="form-control form-control-lg" id="organization" ng-model="$ctrl.ngo" ng-change="$ctrl.setSaveOrg($ctrl.ngo)" ng-options="ngo for ngo in $ctrl.organization"></select>
+            <h2 for='project'> Project: </h2>
+              <select class="form-control form-control-lg" id="project" ng-model="$ctrl.organizationProject" ng-change="$ctrl.setSaveProject($ctrl.organizationProject)" ng-options="project for project in $ctrl.project($ctrl.ngo)"></select>
+              <br>
+            <a class="btn btn-block btn-lg btn-primary" href="#!/payment">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
